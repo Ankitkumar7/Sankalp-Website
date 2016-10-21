@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>Sankalp We Care</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <!-- Bootstrap Core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-full-slider/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-full-slider/css/full-slider.css" rel="stylesheet">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    .bottom-footer{
+      border-top: 1px solid #b2b2b2;
+      margin-top: 10px;
+      padding-top: 10px;
+      color: #b2b2b2;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+  .site-footer{
+    background-color: #222; 
+    color: #fff;
+    padding-top: 30px; 
+  }
+.footer-nav li
+{
+    display:inline;
+    padding: 0px 10px;
+
+}
+.footer-nav{
+  text-align: right;
+  list-style: none;
+}
+.footer-nav li:not(:first-child):before
+{
+   content:'|';
+   padding: 0px 10px;
+}
+.footer-nav a{
+  color: #b2b2b2;
+}
+.footer-nav a:hover
+{
+  color: #fff;
+  text-decoration: none; 
+}
+.no-margin{
+  margin: 0px;
+}
+.no-padding{
+  margin: 0px;
+
+}
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="{% static 'img/sankalplogo.png' %}" height="40"  width="100" />
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Field Trips</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{% static 'img/slider1.jpg'%} ');"></div>
+                <div class="carousel-caption">
+                    <h2>Join Us</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{% static 'img/slider2.jpg'%} ');"></div>
+                <div class="carousel-caption">
+                    <h2>Make Changes</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{% static 'img/slider3.jpg'%} ');"></div>
+                <div class="carousel-caption">
+                    <h2>Spread Smile</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+
+	
+<div class="container text-center">    
+  <h3>Join US and MAKE a difference</h3><br>
+  <div class="row">
+   
+    
+    </div>
+    <div class="container">
+	 <div class="col-sm-6">
+      <img src="{% static 'img/donate.jpg' %} " class="img-responsive" style="width:100%" alt="Image" >
+      <br/>
+      <p><button type="button" class="btn btn-primary">BUY</button></p>
+    </div>
+    <div class="col-sm-6"> 
+      <img src="{% static 'img/t-shirt.jpg' %} " class="img-responsive" style="width:100%" alt="Image" >
+      <br/>
+      <p><button type="button" class="btn btn-primary">DONATE</button>
+</p>    
+    </div>
+  </div>
+  </div>
+</div><br>
+
+
+
+<footer class="site-footer no-margin no-padding">
+<div class="container">
+<h2>Stay Tuned</h2>
+
+
+<div id="mc_embed_signup">
+<form role="form" action="http://eepurl.com/ck0MAb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+<div class="input-group input-group-lg">
+<input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+<span class="input-group-btn">
+<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+</span>
+</div>
+  
+  </div>
+  <div class="bottom-footer"></div>
+  <div class="col-md-5">@Copyright SankalpWeCare 2016.</div>
+  <div class="col-md-7">
+    <ul class="footer-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Field Trips</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </div>
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>
